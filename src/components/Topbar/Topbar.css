@@ -1,0 +1,75 @@
+.topbar{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: .5rem;
+  width:100%;
+  z-index:1;
+}
+.topbar_left{
+  display: flex;
+  align-items: center;
+  gap:7rem;
+  margin-left:13rem;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap:3rem;
+}
+.nav_items{
+  border:none;
+  background-color: #ffffff;
+  font-size: .9rem;
+  color:#3f387b;
+}
+.topbar_right{
+  display: flex;
+  align-items: center;
+  gap:7px;
+  margin-right: 7rem;
+}
+.avatar_with_badge{
+  position: relative;
+}
+.avatar_with_badge div{
+  width:8px;
+  height:8px;
+  background-color: #3fa2f7;
+  border-radius: 50%;
+  position: absolute;
+  top:1px;
+  right:1px;
+}
+.menu_avatar{
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+}
+.profile_select{
+  display: flex;
+  align-items: center;
+  border:none;
+  background-color: transparent;
+  color:#ffffff;
+  gap:10px;
+}
+
+@media screen and (max-width: 768px) {
+  .topbar{
+    gap:3rem
+  }
+  .topbar_left{
+    margin-left: 5rem;
+    gap: 2rem;
+  }
+  .nav_items{
+    font-size: .6rem;
+  }
+  .profile_select{
+    font-size: .6rem;
+  }
+}
